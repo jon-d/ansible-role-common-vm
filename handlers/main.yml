@@ -1,0 +1,6 @@
+- name: reload init
+  command: /sbin/telinit q
+
+- name: update grub
+  command: update-grub
+

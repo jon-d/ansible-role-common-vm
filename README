@@ -1,0 +1,12 @@
+ansible-role-common-vm
+=====================
+
+This ansible role configure a debian vm to run in a ganeti environment.
+
+Two modifications are made :
+
+  - put the default waiting time of grub to on second (which should put the
+    time to reboot most VM below 10 seconds)
+  - setup a serial console with the right parameters, to allow access to the
+    VMs with the ``gnt-instance console`` command.
+
